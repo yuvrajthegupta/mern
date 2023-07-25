@@ -7,10 +7,7 @@ function add(){
                     b+=(arguments[i])[j]
                 }    
             }
-            else if(isNaN(parseInt(arguments[i]))==false){b+=parseInt(arguments[i])}
-            else if(isNaN(parseInt(arguments[i]))==true){b+=0}
-            else if(isNan(arguments[i])==true){b+=0}
-            else{ b+=arguments[i]}
+            else{b+=isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i])}
         }
         console.log(b);   
 }
