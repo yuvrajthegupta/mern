@@ -1,0 +1,106 @@
+//Area and perimeter of rectangle using arrow function
+var l=prompt("Enter length")
+l=parseInt(l)
+var b=prompt("Enter breadth")
+b=parseInt(b)
+comp =(l,b)=>{
+    var a=l*b
+    var p=2*(l+b)
+    alert(`The perimeter is ${p}
+    The area is ${a}`)
+}
+comp(l,b)
+//Area and perimeter of rectangle using name function
+var l=prompt("Enter length")
+l=parseInt(l)
+var b=prompt("Enter breadth")
+b=parseInt(b)
+function comp (l,b){
+    var a=l*b
+    var p=2*(l+b)
+    alert(`The perimeter is ${p}
+    The area is ${a}`)
+}
+comp(l,b)
+//Area and perimeter of rectangle using fucntion expression
+
+//day time using arrow function
+const f=()=>{
+    const date=new Date()
+const date1=date.toLocaleTimeString("en-IN")
+const day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+console.log(`Today is :${day[date.getDay()]}`)
+console.log(`The time is ${date1}`);
+}
+f()
+//day time using name function expression
+function f(){
+    var day=function day(){
+        const date=new Date()
+        const day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+        return day[date.getDay()]
+    }
+    var time=function time(){
+        const date=new Date()
+        const date1=date.toLocaleTimeString("en-IN")
+        return date1;
+    }
+    return {day,time}
+}
+console.log(f()['time']())
+console.log(f()['day']());
+//day time using anonymous function
+function f(){
+    var day=function day(){
+        const date=new Date()
+        const day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+        return day[date.getDay()]
+    }
+    var time=function (){
+        const date=new Date()
+        const date1=date.toLocaleTimeString("en-IN")
+        return date1;
+    }
+    return {day,time}
+}
+console.log(f()['time']())
+console.log(f()['day']());
+//day time using name function
+function f(){
+    const date=new Date()
+const date1=date.toLocaleTimeString("en-IN")
+const day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+console.log(`Today is :${day[date.getDay()]}`)
+console.log(`The time is ${date1}`);
+}
+f()
+//date function using name function
+function d(){
+    const date=new Date().toLocaleDateString("en-IN")
+console.log(date);
+}
+d()
+//date fucntion using arrow function
+d=()=>{
+    const date=new Date().toLocaleDateString("en-IN")
+console.log(date);
+}
+d()
+//date function using function expression
+function f(){
+    var d=function(){
+        const date=new Date().toLocaleDateString("en-IN")
+        return date
+    }
+    return d
+}
+console.log(f()());
+//date function using name function expression
+function f(){
+    var d=function d(){
+        const date=new Date().toLocaleDateString("en-IN")
+        return date
+    }
+    return d
+}
+console.log(f()());
