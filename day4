@@ -1,0 +1,25 @@
+//Q1 sum of salries greater than 10000
+var arr=[10000,11000,12000,9000,5000]
+arr.reduce((sum,e)=>e>10000?sum+e:sum,0)
+//Q2 max salary 
+var arr=[10000,11000,12000,9000,5000]
+arr.reduce((a,b)=>a>b?a:b)
+//Q3count salaries whose >10000
+var arr=[10000,11000,12000,9000,5000]
+arr.reduce((sum,e)=>e>10000?sum+e:sum,0)
+//Q4 sort array of employees by name and salary
+var name=['yuvraj','sahil','aman','vipul','sujal']
+var sal=[1000000,20000,1000,5000,30000,40000]
+var arr=name.map((name,index)=>{return{
+    name:name,
+    sal:sal[index]
+}
+})
+var arr1=arr.sort((a,b)=>a.name.localeCompare(b.name))
+var arr2=arr.sort((a,b)=>a.sal-b.sal)
+console.log(arr);
+console.log(arr1);
+console.log(arr2);
+//Q5 In Employee Salaries add 10% Tax in Each Employee Salary and Store in a new Array, So don't modify the Orginal Array
+var arr=[10000,11000,12000,9000,5000]
+arr3=arr.map(e=>e*0.9)
