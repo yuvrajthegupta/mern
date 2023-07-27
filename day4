@@ -8,9 +8,9 @@ arr.reduce((a,b)=>a>b?a:b)
 var arr=[10000,11000,12000,9000,5000]
 arr.reduce((sum,e)=>e>10000?sum+e:sum,0)
 //Q4 sort array of employees by name and salary
-var name=['yuvraj','sahil','aman','vipul','sujal']
+var name1=['yuvraj','sahil','aman','vipul','sujal']
 var sal=[1000000,20000,1000,5000,30000,40000]
-var arr=name.map((name,index)=>{return{
+var arr=name1.map((name,index)=>{return{
     name:name,
     sal:sal[index]
 }
