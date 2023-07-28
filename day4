@@ -23,3 +23,5 @@ console.log(arr2);
 //Q5 In Employee Salaries add 10% Tax in Each Employee Salary and Store in a new Array, So don't modify the Orginal Array
 var arr=[10000,11000,12000,9000,5000]
 arr3=arr.map(e=>e*0.9)
+//Q6 using filter using reduce
+arr.reduce((s,c)=>{if(c.sal>5000){s.push(c)}return s},[])
